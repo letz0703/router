@@ -1,7 +1,7 @@
 import React from 'react';
 //import styles from './home.module.css'
 
-const Home = (video) => (
+const Home = () => (
   <>
     <h1> Home</h1>
     <button>go to profile</button>

@@ -1,7 +1,7 @@
 import React from 'react';
 //import styles from './profile.module.css'
 
-const Profile = (props) => (
+const Profile = () => (
   <>
     <h1>Profile</h1>
     <button>goto home</button>
