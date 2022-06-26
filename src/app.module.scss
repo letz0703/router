@@ -15,17 +15,29 @@
   --color-primary__lighter: #ff8396;
   --color-lightest: #ffbcda;
 }
-html {
-  font-size: 62.5%;
-}
-a {
-  text-decoration: none;
-}
+
 .section:nth-of-type(1) {
   height: 100vh;
-  // background-color: var(--color-primary);
   h1 {
     font-size: 4rem;
     padding: 1rem;
   }
+}
+
+[data-scroll] {
+  transition: opacity 1s;
+  // opacity: 0;
+  // will-change: transform, scale, opacity;
+  // transform: translateY(6rem) scale(0.93);
+  // transition: all 1.5s cubic-beizer(0.164, 0.84, 0.44, 1);
+  // transition: all 1.5s cubic-beizer(0.164, 0.84, 0.44, 1);
+  // transition: all 1.5s cubic-beizer(0.164, 0.84, 0.44, 1);
+}
+
+[data-scroll='in'] {
+  opacity: 1;
+  // transform: translateY(0) scale(1);
+}
+[data-scroll='out'] {
+  opacity: 0;
 }

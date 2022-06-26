@@ -17,18 +17,22 @@
   --color-lightest: #ffbcda;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-a {
-  text-decoration: none;
-}
-
 .section:nth-of-type(1) {
   height: 100vh;
 }
 .section:nth-of-type(1) h1 {
   font-size: 4rem;
   padding: 1rem;
+}
+
+[data-scroll] {
+  transition: opacity 1s;
+}
+
+[data-scroll=in] {
+  opacity: 1;
+}
+
+[data-scroll=out] {
+  opacity: 0;
 }/*# sourceMappingURL=app.module.css.map */

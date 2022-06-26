@@ -6,25 +6,18 @@
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Web site created using create-react-app" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <!-- typeit ↓ -->
   <script src="https://unpkg.com/typeit@8.6.0/dist/index.umd.js"></script>
-  <title>React App</title>
+  <title>i.canmart</title>
 </head>
 
 <body>
   <h1 id="logo">iCANMART</h1>
   <span class="logo_sub">BUSAN KOREA</span>
   <script>
-    // document.addEventListener( 'DOMContentLoaded', () =>
-    // {
-    //   new TypeIt( '#logo' )//
-    //     .pause( 1000 )
-    //     .delete( 7, {delay: 1000} )
-    //     .type( "." )
-    //     .go();
-    // } );
     new TypeIt( '#logo', {
       speed: 50,
       afterComplete: function ( instance )
@@ -41,7 +34,10 @@
       .pause( 1000 )
       .move( null, {to: 'START'} )
       .type( "<b>i.</b>" )
-      .pause( 1000 )
+      .pause( 2000 )
+      .move( null, {to: 'END'} )
+      // .type( "<b>i.</b>" )
+      .pause( 3000 )
       .go();
   </script>
   <div id="root"></div>
