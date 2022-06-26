@@ -1,3 +1,20 @@
+.hero {
+  height: 400px;
+}
+.header {
+  position: relative;
+  height: 100px;
+}
+.stick-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+.stick-hedder[data-scroll='in'] {
+  position: fixed;
+}
 #logo {
   font-size: 3rem;
   padding: 1rem 0 0 1rem;
@@ -19,11 +36,6 @@
   --ti-cursor-margin-left: 0.1em;
   --ti-cursor-color: dodgerblue;
   /* --ti-cursor-color: #c10002; */
-}
-
-#root {
-  display: flex;
-  justify-content: center;
 }
 
 *,

@@ -6,11 +6,14 @@
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Web site created using create-react-app" />
-  <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!-- tachyon ↓ -->
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
   <!-- typeit ↓ -->
   <script src="https://unpkg.com/typeit@8.6.0/dist/index.umd.js"></script>
+  <!-- scrollout : https://scroll-out.github.io/guide.html#installing-from-a-cdn-->
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
   <title>i.canmart</title>
 </head>
 
@@ -22,7 +25,7 @@
       speed: 50,
       afterComplete: function ( instance )
       {
-        instance.destroy();
+        instance.destroy();//remove cursor
       }
     } )//
       .options( {speed: 200} )
@@ -34,13 +37,22 @@
       .pause( 1000 )
       .move( null, {to: 'START'} )
       .type( "<b>i.</b>" )
-      .pause( 2000 )
+      .pause( 500 )
       .move( null, {to: 'END'} )
-      // .type( "<b>i.</b>" )
-      .pause( 3000 )
+      .pause( 2000 )
       .go();
   </script>
   <div id="root"></div>
+  </p>
+  <p>
+    </div>
+    </div>
+    <script>
+      ScrollOut( {
+        targets: "#logo"
+        // , offset: 400
+      } )
+    </script>
 </body>
 
 </html>
