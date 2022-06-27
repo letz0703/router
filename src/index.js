@@ -1,11 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './app';
+import ScrollOut from 'scroll-out';
+import Splitting from 'splitting';
+console.clear();
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+ScrollOut({
+  cssProps: {
+    visibleY: true,
+    viewportY: true
+  }
+});
+
+Splitting({target: '.heading'});
