@@ -102,6 +102,13 @@ section:nth-of-type(4) {
   transform: translateY(5rem);
 }
 
-.gonggoo {
-  color: var(--color-lightest);
+// .gonggoo {
+//   color: var(--color-lightest);
+// }
+
+.menu {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
 }
