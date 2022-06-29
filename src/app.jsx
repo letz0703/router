@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <nav>
-          <Link to='/'>Home</Link>
+        <nav>
+          <Link to='/'>Hi</Link>
           <Link to='/profile'>Profile</Link>
-        </nav> */}
+        </nav>
         <Routes>
           <Route path='/' element={<Home />} exact />
           <Route path='/profile' element={<Profile />} />
