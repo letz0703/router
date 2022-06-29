@@ -195,6 +195,7 @@ section:nth-of-type(4) a.btn {
     display: flex;
     li {
       padding: 0.8em 1.2em;
+      font-size: 1.8em;
     }
     li:hover {
       background-color: #f6e8e7;
@@ -207,12 +208,13 @@ section:nth-of-type(4) a.btn {
     display: flex;
     li {
       padding: 1em 1.2em;
+      font-size: 1.8em;
     }
   }
   &__toggleBtn {
     position: absolute;
-    top: 0.3em;
-    right: 0.3em;
+    top: 0.4em;
+    right: 0.4em;
     font-size: 3rem;
     color: white;
     display: none;
@@ -241,12 +243,19 @@ section:nth-of-type(4) a.btn {
     }
     &__icons {
       justify-content: center;
-      i {
+      display: none;
+      li {
+        cursor: pointer;
       }
       width: 100%;
     }
     &__toggleBtn {
       display: block;
+    }
+
+    &__menu.active,
+    &__icons.active {
+      display: flex;
     }
   }
 }

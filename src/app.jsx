@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import Home from './components/home';
-import Profile from './components/profile';
+import Japan from './components/japan';
 // import styles from './app.module.css';
 
 function App() {
@@ -9,13 +9,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <nav>
-          <Link to='/'>Hi</Link>
-          <Link to='/profile'>Profile</Link>
-        </nav>
         <Routes>
-          <Route path='/' element={<Home />} exact />
-          <Route path='/profile' element={<Profile />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/japan' element={<Japan />} />
         </Routes>
       </BrowserRouter>
     </>

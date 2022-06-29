@@ -208,6 +208,7 @@ section:nth-of-type(4) a.btn {
 }
 .navbar__menu li {
   padding: 0.8em 1.2em;
+  font-size: 1.8em;
 }
 .navbar__menu li:hover {
   background-color: #f6e8e7;
@@ -219,11 +220,12 @@ section:nth-of-type(4) a.btn {
 }
 .navbar__icons li {
   padding: 1em 1.2em;
+  font-size: 1.8em;
 }
 .navbar__toggleBtn {
   position: absolute;
-  top: 0.3em;
-  right: 0.3em;
+  top: 0.4em;
+  right: 0.4em;
   font-size: 3rem;
   color: white;
   display: none;
@@ -251,9 +253,16 @@ section:nth-of-type(4) a.btn {
   }
   .navbar__icons {
     justify-content: center;
+    display: none;
     width: 100%;
+  }
+  .navbar__icons li {
+    cursor: pointer;
   }
   .navbar__toggleBtn {
     display: block;
+  }
+  .navbar__menu.active, .navbar__icons.active {
+    display: flex;
   }
 }/*# sourceMappingURL=index.css.map */
