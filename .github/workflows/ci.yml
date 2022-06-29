@@ -13,12 +13,12 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v3
       - name: Setup node.js 14.x
         uses: actions/setup-node@v3
         with:
           node-version: 14.x
           cache: 'npm'
-      - run: yarn add
+      - run: yarn
       - run: yarn install --immutable --immutable-cache --check-cache
       - run: yarn test
